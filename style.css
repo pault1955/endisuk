@@ -1,0 +1,580 @@
+/* ==========================================================================
+   CSS Reset
+   ========================================================================== */
+
+/*
+YUI 3.11.0 (build d549e5c)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,images{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+/* ==========================================================================
+   Global CSS
+   ========================================================================== */
+*, *:before, *:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+
+body{color: #4f4f4f;font-size: 16px;font-family: 'PT Sans', sans-serif;}
+
+.inner{width: 1000px;margin: 0 auto;position: relative;}
+.inner:before, .inner:after{display: table;content: "";line-height: 0;}
+.inner:after{clear: both;}
+
+.clear{}
+.clear:before, .clear:after{display: table;content: "";line-height: 0;}
+.clear:after{clear: both;}
+
+a{-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;}
+
+a, a:hover {
+	color: #cc0033;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+.appleLinks a  { text-decoration: none !important; }
+
+a img{ outline: none; border: none; }
+.list-inline > li{display: inline-block;}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #5C5C5C;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 27px;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 23px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+strong {
+    font-weight: bold;
+    font-style: inherit;
+}
+
+em {
+    font-style: italic;
+    font-weight: inherit;
+}
+
+ul {
+    display: block;
+	list-style-type: disc;
+	padding-left: 40px;
+}
+
+ol  {
+    display: block;
+	list-style-type: decimal;
+	padding-left: 40px;
+}
+
+.hidden_large{display: none;}
+
+/* ==========================================================================
+   Top Bar
+   ========================================================================== */
+#top_bar{background: #e3e4e3;}
+	#top_bar .date{color: #484848;font-size: 12px;float: left;margin: 12px 0;}
+	
+	#top_bar .entry_btns{float: right;margin: 7px 0 6px;}
+	#top_bar .entry_btns a{color: #fff;font-size: 15px;text-decoration: none;background: #cc0033;
+	display: block;float: left;padding: 4px 28px;margin-left: 10px;}
+	#top_bar .entry_btns a:hover{background: #4e4e4e;}
+
+
+/*=================
+login window */
+	#top_bar #DivLoginBox {
+		 background-color: #dedede !important;
+		 border: 0px !important;
+		 background-image: none  !important;
+		 text-indent: 0 !important;
+  		 width: 320px !important;
+  		 height: 220px !important;
+  		 padding: 10px;
+  	     position: fixed !important;
+	}
+
+	#top_bar #DivLoginBox table {
+        background-color: #dedede !important;
+        border: 0px;
+    }
+
+    #top_bar div#DivLoginBox .button {
+	    background-color: #cc0033;
+	    background-image: none;
+	    border-style: hidden;
+	    border-width: 0;
+	    color: #FFFFFF;
+	    font-family: arial,helvetica,sans-serif;
+	    font-size: 12px;
+	    font-weight: normal;
+	    height: 26px;
+	    position: relative;
+	    text-indent: 0;
+	    width: 60px;
+  		cursor: pointer;
+}
+    #top_bar #DivLoginBox table a {
+        float: none ;
+        color: #4F4F4F;
+        background-color: transparent;
+        padding: 0;
+        display: inline-block;
+
+    }
+
+    #DivLoginBox table a:hover {
+        float: none;
+        color: #fff;
+        background-color: transparent;
+        
+    }
+	
+	/* Event Popup */
+
+#calendar_title select {
+font-size: medium;
+}
+
+#calendar_title input {
+margin-top: 5px;
+}
+
+body.eventpopupwindow  {
+	padding: 10px;
+}
+
+body.eventpopupwindow table {
+	border-collapse:separate;
+	border-spacing:5px;
+}
+
+
+/* Calendar Advanced options */
+
+.system_option {
+	margin: 6px;
+}
+
+/* input fields - sermons and media */
+
+#media_controls input.text, #media_controls select {
+	border: 1px solid #dddddd;
+	height: 20px;
+}
+	
+/* ==========================================================================
+   Header
+   ========================================================================== */
+#header{}
+
+#mobile_nav{line-height: 0;}
+.slicknav_menu{line-height: normal;}
+
+.logo{display: block; font-size: 53px;color: #5c5c5c;float: left;margin-top: 30px;}
+    .logo a{text-decoration: none;}
+    .logo_image img {height: 57px}
+    .logo_text, .logo_text a{vertical-align: top; line-height: 58px;}
+
+#search_box{float: right;width: 195px;position: relative;margin: 35px auto 0;}
+	#search_box .text{display: block;width: 100%;height: 30px;padding: 6px 12px;font-size: 13px;
+	line-height: 1.23;color: #919496;background-color: #fff;background-image: none;border: 1px solid #cfcecd;}
+	
+	#search_box .button{width: 30px;height: 30px;cursor: pointer;background: url(../images/icon_search.png) center no-repeat;
+	border: none;position: absolute;top: 0;right: 0;text-indent: -999999px;}
+	
+	#search_box .text:focus, #search_box .button:focus{outline: none;}
+	
+#header .social{float: right;margin: 35px auto 0; list-style: none; padding-left: 0;}
+	#header .social li{float: left;margin-left: 7px;}
+	#header .social li a{width: 31px;height: 30px;display: block;text-indent: -9999px;}
+	#header .social li:hover a{opacity: 0.7;}
+	#header .social li .icon_facebook{background: url(../images/icon_facebook.jpg) center no-repeat;}
+	#header .social li .icon_rss{background: url(../images/icon_rss.jpg) center no-repeat;}
+	#header .social li .icon_twitter{background: url(../images/icon_twitter.jpg) center no-repeat;}
+	
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+#nav{margin: 10px auto;}
+	.root_menu, .root_menu ul {list-style: none; padding-left: 0;}
+	#nav li{float: left;}
+	#nav li{font-size: 19px;position: relative;}
+		#nav li > a{color: #4f4f4f;text-decoration: none;display: block;padding: 5px 16px;}
+		#nav li:hover > a{background: url(../images/nav_bg.jpg) center;color: #fff;}
+		#nav li:hover > ul{display: block;}
+	#nav ul ul{display: none;position: absolute;top: 100%;left: 0;background: #f6f6f6;min-width: 190px;
+	border: 1px solid #dadee1;z-index: 99;}
+	#nav ul ul li{width: 100%;}
+	#nav ul ul a{color: #50504f;font-size: 16px;}
+	#nav ul ul li:hover > a{color: #50504f;background: #dedede;}
+	#nav ul ul li + li{border-top: 1px solid #dadee1;}
+	
+	#nav ul ul ul{left: 100%;top: 0;}
+	
+	.slicknav_menu{display:none;}
+
+	.root_menu li li.has_sub_menu:after {
+ 	content:"»";
+  	position: absolute;
+  	right: 7px;
+  	top: 3px;
+}
+
+
+	
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#footer{background: #e3e4e3;color: #5c5c5c;font-size: 13px;text-align: center;padding: 27px 0 48px;}
+	#footer #footer_charity{position: absolute;top: 0; right: 0;}
+	#footer .footer{float: left;}
+	#footer .footer:after{content: "";}
+	#footer #footer_help:after{content: "";}
+	#footer #footer_mobile{margin-left: -15px;}
+	#footer a{color: #5c5c5c;text-decoration: none;}
+	#footer a:after{content: "|";color: #5c5c5c;font-size: 13px;padding: 0 5px;}
+	
+
+	#footer a.footer {
+	display: block;
+	width: 156px;
+	position: absolute;
+	background: url(../images/site-by-churchinsight.png) top center no-repeat;
+	text-indent: -9999em;
+	top: -7px;
+	height: 28px;
+}
+
+#footer a.footer:hover{
+	background: url(../images/site-by-churchinsight-hover.png) top center no-repeat;
+	text-decoration: none;
+	opacity: 1;
+}
+/* ==========================================================================
+   Main
+   ========================================================================== */
+#main{margin: 25px auto 50px;}
+	#main .col{float: left;width: 227px;}
+	#main .col + .col{margin-left: 30px;}
+	
+	#main .col h3.highlight {color: #cc0033; margin-bottom: 25px;}
+	#main .col h3{color: #5c5c5c;font-size: 37px;line-height: 1;margin-bottom: 20px;}
+	#main .col p{color: #30373a;font-size: 14px;margin-bottom: 25px;}
+	
+	#main .col .btn{color: #707070;font-size: 18px;text-decoration: none;display: block;
+	background: #edefea url(../images/icon_info.png) 12px center no-repeat;padding-left: 45px;
+	border: 1px solid #e3e3e3;padding: 8px 5px 8px 45px;}
+	#main .col .btn:hover{border-color: #cacaca;background: #e4e5e1 url(../images/icon_info.png) 12px center no-repeat;}
+	
+	.recentMediaTitle a{color: #464646;font-size: 14px;text-decoration: none;}
+	.recentMediaSpeaker, .recentMediaDate{font-size: 14px;color: #cc0033;float: left;}
+	
+	.MediaList > div{}
+	.MediaList > div:before, .MediaList > div:after{display: table;content: "";line-height: 0;}
+	.MediaList > div:after{clear: both;}
+	
+	.MediaList > div + div{border-top: 1px solid #e4e4e4;}
+	
+	.upcomingEvents div > div:first-child a{font-weight: bold;color: #cc0033;font-size: 16px;text-decoration: none;}
+	.upcomingEvents div > div{color: #30373a;font-size: 14px;}
+	.upcomingEvents div > div a{color: #30373a;font-size: 14px;text-decoration: none;}
+	
+	.upcomingEvents > div + div{border-top: 1px solid #e4e4e4;}
+	
+	.latestNews a{font-weight: bold;color: #cc0033;font-size: 16px;text-decoration: none;}
+	.latestNews div div{line-height: 1;padding-right: 0 !important;}
+	.latestNews span{color: #30373a;font-size: 14px;}
+	
+	.admin_btns{list-style: none; padding-left: 0;}
+		.admin_btns li + li{margin-top: 25px;}
+		.admin_btns a{display: block;color: #636363;font-family: Calibri, Helvetica, Arial, sans-serif;
+		text-decoration: none;}
+		.admin_btns span{display: block;}
+		.admin_btns span span{display: inline-block;}
+		.admin_btns .big{font-size: 20px;font-weight: bold;}
+		.admin_btns .small{font-size: 14px;color: #cc0033;}
+		
+		.admin_btns li .profile{background: url(../images/icon_user2.png) center right no-repeat;}
+		.admin_btns li:hover .profile{background: url(../images/icon_user2_hover.png) center right no-repeat;}
+
+		.admin_btns li .book{background: url(../images/icon_book.png) 188px center no-repeat;}
+		.admin_btns li:hover .book{background: url(../images/icon_book_hover.png) 188px center no-repeat;}
+
+		.admin_btns li .calendar{background: url(../images/icon_calendar.png) 188px center no-repeat;}
+		.admin_btns li:hover .calendar{background: url(../images/icon_calendar_hover.png) 188px center no-repeat;}
+		
+		.admin_btns li .connections{background: url(../images/icon_connections.png) 188px center no-repeat;}
+		.admin_btns li:hover .connections{background: url(../images/icon_connections_hover.png) 188px center no-repeat;}
+		
+/* ==========================================================================
+   Content Page
+   ========================================================================== */
+#main .content{width: 745px;float: left;}
+	#main .content img{height: auto;margin-bottom: 25px;}
+#main .content h2{color: #5c5c5c;}
+	margin-bottom: 25px;}
+	
+	#main .content p{color: #30373a;margin-bottom: 20px;}
+	
+#main .sidebar{width: 225px;float: right;}
+	#main .sidebar .widget{margin-bottom: 30px;}
+	.widget.navgroup{border: 1px solid #e1e1df;}
+	.navgroup .group_nav_child a, .navgroup .group_nav_sibling a, .navgroup .group_nav_parent a{background: #f6f6f6;color: #50504f;text-decoration: none;
+	display: block;padding: 3px 12px;}
+	.navgroup .group_nav_child + .group_nav_child a{border-top: 1px solid #e1e1df;}
+	.navgroup .group_nav_child a:hover, .navgroup .group_nav_sibling a:hover, .navgroup .group_nav_parent a:hover {background: #dedede;}
+	
+	.navgroup .group_nav_sibling a{background: #f6f6f6;color: #50504f;text-decoration: none;
+	display: block;padding: 3px 12px;}
+	
+	.navgroup .group_nav_selected a{background: #f6f6f6;color: #50504f;text-decoration: none;
+	display: block;padding: 3px 12px;}
+	
+	.navgroup .group_nav_sibling + .group_nav_sibling a{border-top: 1px solid #e1e1df;}
+	.navgroup .group_nav_selected > a{border-top: 1px solid #e1e1df;background: #dedede;}
+	
+	.navgroup .group_nav_selected + div a{border-top: 1px solid #e1e1df;}
+	
+	
+
+
+
+	.visitor_btn .btn{color: #707070;font-size: 18px;text-decoration: none;display: block;
+	background: #edefea url(../images/icon_info.png) 12px center no-repeat;	padding-left: 45px;	border: 1px solid #e3e3e3;
+	padding: 8px 5px 8px 45px;}
+	
+	.visitor_btn .btn:hover{border-color: #cacaca;background: #e4e5e1 url(../images/icon_info.png) 12px center no-repeat;}
+	
+	.widget.login{background: #f1f3f5;padding: 20px;text-align: center;}
+		.widget.login p{color: #58585a;}
+		.widget.login p .bold{font-weight: bold;}
+		
+	.login .btn{color: #fff;font-size: 16px;text-decoration: none;display: block;
+	background: #cc0033 url(../images/icon_user.png) 10px center no-repeat;padding-left: 45px;border: 1px solid #e3e3e3;
+	padding: 8px 5px 8px 45px;font-weight: bold;text-align: left;margin: 15px auto;}
+	
+	.login .btn:hover{background: #a01010 url(../images/icon_user.png) 10px center no-repeat;}
+	
+	.login .register_btn{display: block;text-decoration: none;color: #58585a;font-weight: bold;}
+	
+	.widget .admin_btns li .profile{background: url(../images/icon_user2.png) center right no-repeat;}
+	.widget .admin_btns li:hover .profile{background: url(../images/icon_user2_hover.png) center right no-repeat;}
+
+	.widget .admin_btns li .book{background: url(../images/icon_book.png) 185px center no-repeat;}
+	.widget .admin_btns li:hover .book{background: url(../images/icon_book_hover.png) 185px center no-repeat;}
+
+	.widget .admin_btns li .calendar{background: url(../images/icon_calendar.png) 185px center no-repeat;}
+	.widget .admin_btns li:hover .calendar{background: url(../images/icon_calendar_hover.png) 185px center no-repeat;}
+	
+	.widget .admin_btns li .connections{background: url(../images/icon_connections.png) 185px center no-repeat;}
+	.widget .admin_btns li:hover .connections{background: url(../images/icon_connections_hover.png) 185px center no-repeat;}
+	
+/* ==========================================================================
+   Portrait iPad
+   ========================================================================== */
+@media only screen and (max-width: 1023px){
+	
+	.inner{width: 728px;}
+	
+	#nav ul .last_item ul ul{left: auto;right: 100%;}
+  
+  	.logo {font-size: 40px;}
+  	.logo_image img {height: 36px;}
+    .logo_text, .logo_text a {
+        line-height: 45px;
+    }
+	
+	#footer a.footer {
+		top: -9px;
+	}
+	#main .col{float: left;width: 165px;}
+	#main .col + .col{margin-left: 20px;}
+	
+	#main .content{width: 490px;float: left;}
+	
+	#main .sidebar{width: 220px;float: right;}
+	
+	.admin_btns li .profile{background: url(../images/icon_user2.png) center right no-repeat;}
+	.admin_btns li:hover .profile{background: url(../images/icon_user2_hover.png) center right no-repeat;}
+
+	.admin_btns li .book{background: url(../images/icon_book.png) 125px center no-repeat;}
+	.admin_btns li:hover .book{background: url(../images/icon_book_hover.png) 125px center no-repeat;}
+
+	.admin_btns li .calendar{background: url(../images/icon_calendar.png) 125px center no-repeat;}
+	.admin_btns li:hover .calendar{background: url(../images/icon_calendar_hover.png) 125px center no-repeat;}
+	
+	.admin_btns li .connections{background: url(../images/icon_connections.png) 125px center no-repeat;}
+	.admin_btns li:hover .connections{background: url(../images/icon_connections_hover.png) 125px center no-repeat;}
+	
+	.admin_btns .big{font-size: 18px;}
+	.admin_btns .small{font-size: 12px;width: 121px;}
+	
+	.widget .admin_btns li .profile{background: url(../images/icon_user2.png) center right no-repeat;}
+	.widget .admin_btns li:hover .profile{background: url(../images/icon_user2_hover.png) center right no-repeat;}
+
+	.widget .admin_btns li .book{background: url(../images/icon_book.png) 180px center no-repeat;}
+	.widget .admin_btns li:hover .book{background: url(../images/icon_book_hover.png) 180px center no-repeat;}
+
+	.widget .admin_btns li .calendar{background: url(../images/icon_calendar.png) 180px center no-repeat;}
+	.widget .admin_btns li:hover .calendar{background: url(../images/icon_calendar_hover.png) 180px center no-repeat;}
+	
+	.widget .admin_btns li .connections{background: url(../images/icon_connections.png) 180px center no-repeat;}
+	.widget .admin_btns li:hover .connections{background: url(../images/icon_connections_hover.png) 180px center no-repeat;}
+	
+}
+
+/* ==========================================================================
+   Landscape iPhone
+   ========================================================================== */
+@media only screen and (max-width: 767px){
+
+	.visible_small{display: block;}
+
+	.inner{width: 480px;}
+	#top_bar{display: none;}
+	.social{display: none;}
+	#search_box{display: none;}
+	#nav{display: none;}
+	
+  	.logo{float:none; text-align: center; width: 100%; margin-bottom: 20px; font-size: 40px;}
+	
+	#main{margin-top: 0;margin-bottom: 20px;}
+	#main .col{width: 100%;padding: 0 20px;}
+	#main .col + .col{margin: 0;}
+	#main .col .text{background: #edefea;}
+	#main .col h3.highlight {margin: 0 0 13px;padding: 20px 20px 0; background-image: none;}
+	#main .col p{padding: 0 20px 20px;margin-bottom: 13px;}
+	#main .col .btn{width: 225px;margin-left: 20px; margin-bottom: 13px;}
+	
+	#main .col:first-child{padding: 0;margin-bottom: 0px;}
+	#main .col{padding: 0 20px;margin-bottom: 20px;border-bottom: 1px solid #ededed;}
+	
+	#main .col h3{cursor: pointer;background: url(../images/arrow_down.png) center right no-repeat;
+	margin: 30px auto;}
+	#main .col h3.active{background: url(../images/arrow_up.png) center right no-repeat;}
+	
+	.entry_btns.visible_small{width: 480px;margin: 20px auto;text-align: center;}
+	.entry_btns.visible_small a{color: #fff;font-size: 15px;text-decoration: none;background: #cc0033;
+	display: inline-block;padding: 4px 28px;margin-left: 10px;}
+	.entry_btns.visible_small a:hover{background: #999999;}
+
+	#footer{padding: 60px 0 25px;}
+	#footer .footer{float: none;display: block;margin-bottom: 20px;}
+	#footer #footer_mobile{margin-left: 0;}
+
+	#footer #footer_charity{position: relative;display: block;margin-top: 20px;}
+	
+	#footer a.footer {
+			top: -45px;
+			margin-left: 164px;
+		}
+
+	#slider .bx-wrapper .bx-pager{bottom: 0;}
+	#slider .bx-wrapper .bx-pager.bx-default-pager a{width: 20px;height: 20px;line-height: 20px;
+	font-size: 14px;}
+	
+	.js .slicknav_menu{display:block;}
+	
+	#main .content{width: 100%;float: left;}
+	
+	#main .sidebar{width: 100%;float: right;}
+	#main .sidebar .navgroup{display: none;}
+	
+	.admin_btns{background: #fff;padding: 20px;}
+	.admin_btns li{width: 50%;float: left;margin-bottom: 20px;}
+	.admin_btns li + li{margin: 0;margin-bottom: 20px;}
+	
+	.admin_btns .big{font-size: 16px;}
+	.admin_btns .small{font-size: 11px;width: auto;margin-right: 35px;}
+	
+	.admin_btns li{width: 48%;}
+	.widget .admin_btns li{width: 48%;}
+	.admin_btns li:nth-child(2n+2){float: right;}
+	.widget .admin_btns li:nth-child(2n+2){float: right;}
+	
+	.widget .admin_btns li .profile, .admin_btns li .profile{background: url(../images/icon_user2_small.png) top right no-repeat;}
+	.widget .admin_btns li:hover .profile, .admin_btns li:hover .profile{background: url(../images/icon_user2_small.png) top right no-repeat;}
+
+	.widget .admin_btns li .book, .admin_btns li .book{background: url(../images/icon_book_small.png) right top no-repeat;}
+	.widget .admin_btns li:hover .book, .admin_btns li:hover .book{background: url(../images/icon_book_small.png) right top no-repeat;}
+
+	.widget .admin_btns li .calendar, .admin_btns li .calendar{background: url(../images/icon_calendar_small.png) right top no-repeat;}
+	.widget .admin_btns li:hover .calendar, .admin_btns li:hover .calendar{background: url(../images/icon_calendar_small.png) right top no-repeat;}
+	
+	.widget .admin_btns li .connections, .admin_btns li .connections{background: url(../images/icon_connections_small.png) right top no-repeat;}
+	.widget .admin_btns li:hover .connections, .admin_btns li:hover .connections{background: url(../images/icon_connections_small.png) right top no-repeat;}
+	
+	.admin_btns li .calendar .block{display: block;}
+	
+	.slicknav_nav .log_out_nav{padding: 6px 20px;}
+		.slicknav_nav .log_out_nav a{display: inline-block;margin-right: 10px;font-size: 12px;}
+		.slicknav_nav .log_out_nav a:hover{color: #606060;}
+	
+	.slicknav_nav .sign_in_nav{padding: 6px 20px;}
+		.slicknav_nav .sign_in_nav a{display: inline-block;margin-right: 10px;font-size: 12px;}
+		.slicknav_nav .sign_in_nav a:hover{color: #606060;}
+	
+}
+
+/* ==========================================================================
+   Portrait iPhone
+   ========================================================================== */
+@media only screen and (max-width: 479px){
+	
+	.inner{width: auto;}
+	.entry_btns.visible_small{width: auto;}
+	
+	.logo {font-size: 31px;}
+    .logo_image img {
+    	height: 29px;
+    }
+  	.logo_text, .logo_text a {
+   		line-height: 35px;
+    }
+	
+	#main .content > *{padding: 0 20px;}
+	#main .content > img{padding: 0;}
+	#main .sidebar{padding: 0;}
+	#main.members .sidebar{padding: 0;}
+	
+	#footer a.footer {
+			margin-left: 27%;
+		}
+}
