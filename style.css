@@ -1,7 +1,7 @@
 /* ==========================================================================
    CSS Reset
    ========================================================================== */
-
+/* test GitHugb iintegration */
 /*
 YUI 3.11.0 (build d549e5c)
 Copyright 2013 Yahoo! Inc. All rights reserved.
@@ -349,7 +349,7 @@ body.eventpopupwindow table {
 #main .content{width: 745px;float: left;}
 	#main .content img{height: auto;margin-bottom: 25px;}
 #main .content h2{color: #5c5c5c;}
-	margin-bottom: 25px;}
+	margin-bottom:{ 25px;}
 	
 	#main .content p{color: #30373a;margin-bottom: 20px;}
 	
@@ -387,7 +387,7 @@ body.eventpopupwindow table {
 		.widget.login p .bold{font-weight: bold;}
 		
 	.login .btn{color: #fff;font-size: 16px;text-decoration: none;display: block;
-	background: #cc0033 url(../images/icon_user.png) 10px center no-repeat;padding-left: 45px;border: 1px solid #e3e3e3;
+	background: #cc0033 url(../images/icon_user.png) 10px center no-repeat;border: 1px solid #e3e3e3;
 	padding: 8px 5px 8px 45px;font-weight: bold;text-align: left;margin: 15px auto;}
 	
 	.login .btn:hover{background: #a01010 url(../images/icon_user.png) 10px center no-repeat;}
